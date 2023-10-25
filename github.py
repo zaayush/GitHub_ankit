@@ -46,7 +46,17 @@ modified_board = flood_fill(board, old=".", new="~", x=5, y=12)
 
 for a in modified_board:
     print(a)
-
+# Define the board again to remove old values and the 2nd modification will now work properly 
+board = [
+    "......................",
+    "......##########......",
+    "......#........#......",
+    "......#........#......",
+    "......#........#####..",
+    "....###............#..",
+    "....#............###..",
+    "....##############....",
+]
 modified_board = flood_fill(board, old=".", new="~", x=1, y=1)
 
 for a in modified_board:
